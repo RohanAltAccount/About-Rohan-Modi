@@ -1,0 +1,141 @@
+/* Reset some defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #181c20;
+  color: #f5f6fa;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica', Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main.container {
+  max-width: 480px;
+  margin: 48px auto 0 auto;
+  padding: 32px 20px 24px 20px;
+  border-radius: 18px;
+  background: rgba(24,28,32,0.95);
+  box-shadow: 0 6px 32px 0 rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.avatar {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  border: 4px solid #46a0f5;
+  box-shadow: 0 2px 12px rgba(70,160,245,0.16);
+  margin-bottom: 16px;
+  object-fit: cover;
+  background: #23272e;
+}
+
+h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #a2b8d7;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: #dbe8fa;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.link {
+  color: #46a0f5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.link:hover {
+  color: #78d9fb;
+  text-decoration: underline;
+}
+
+/* Links Section */
+.links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: #22262c;
+  border-radius: 12px;
+  padding: 14px 18px;
+  transition: box-shadow 0.2s, transform 0.15s;
+  box-shadow: 0 2px 12px rgba(70,160,245,0.08);
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+}
+.card:hover {
+  box-shadow: 0 4px 16px rgba(70,160,245,0.16);
+  border: 1.5px solid #46a0f5;
+  transform: translateY(-2px) scale(1.025);
+}
+
+.card span {
+  font-size: 2rem;
+  margin-right: 18px;
+}
+
+.card .title {
+  font-weight: 600;
+  font-size: 1.13rem;
+  margin-bottom: 2px;
+}
+.card .desc {
+  font-size: 0.97rem;
+  color: #a2b8d7;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin: 32px 0 18px 0;
+  color: #7b8fa8;
+  font-size: 0.97rem;
+}
+
+@media (max-width: 580px) {
+  main.container {
+    margin-top: 18px;
+    padding: 16px 2vw 18px 2vw;
+  }
+  .card span {
+    font-size: 1.6rem;
+    margin-right: 10px;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+}
