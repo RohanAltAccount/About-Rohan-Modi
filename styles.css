@@ -50,7 +50,7 @@ h1 {
   margin-bottom: 10px;
 }
 .desc {
-  color: #dbe8fa;
+  color: #6EB9FF;
   font-size: 1rem;
   text-align: center;
   margin-bottom: 0;
@@ -87,7 +87,7 @@ h1 {
 }
 .card:hover {
   box-shadow: 0 4px 16px rgba(70,160,245,0.16);
-  border: 1.5px solid #46a0f5;
+  border: 1.5px solid #6EB9FF;
   transform: translateY(-2px) scale(1.025);
 }
 .card span {
@@ -101,7 +101,7 @@ h1 {
 }
 .card .desc {
   font-size: 0.97rem;
-  color: #a2b8d7;
+  color: #6EB9FF;
 }
 footer {
   text-align: center;
