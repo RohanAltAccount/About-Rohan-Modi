@@ -1,10 +1,9 @@
-/* Reset some defaults */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 body {
   background: #181c20;
   color: #f5f6fa;
@@ -13,7 +12,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 main.container {
   max-width: 480px;
   margin: 48px auto 0 auto;
@@ -75,15 +73,12 @@ h1 {
   color: #78d9fb;
   text-decoration: underline;
 }
-
-/* Links Section */
 .links {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
-
 .card {
   display: flex;
   align-items: center;
