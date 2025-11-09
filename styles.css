@@ -57,13 +57,13 @@ h1 {
   line-height: 1.6;
 }
 .link {
-  color: #46a0f5;
+  color: #6EB9FF;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
 }
 .link:hover {
-  color: #78d9fb;
+  color: #FFB46E;
   text-decoration: underline;
 }
 .links {
