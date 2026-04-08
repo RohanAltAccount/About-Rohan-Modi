@@ -19,12 +19,13 @@ main.container {
   background: #FFFFFF;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
 }
 .profile {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
+  text-align: center;
   margin-bottom: 32px;
 }
 .avatar {
@@ -51,7 +52,7 @@ h1 {
 .desc {
   color: #4a4a4a;
   font-size: 1rem;
-  text-align: left;
+  text-align: center;
   margin-bottom: 0;
   line-height: 1.6;
 }
@@ -59,12 +60,31 @@ h1 {
   color: #6a6a6a;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-flex;
+  align-items: center;
 }
 .link:hover {
   color: #000000;
-  transform: translateY(3px);
+  transform: translateY(-2px);
   text-decoration: none;
+}
+.card {
+  display: flex;
+  align-items: left;
+  background: transparent;
+  border-radius: 12px;
+  padding: 14px 18px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  border: none;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+  background: rgba(0,0,0,0.03);
 }
 .links {
   width: 100%;
@@ -73,11 +93,13 @@ h1 {
   gap: 18px;
 }
 footer {
-  text-align: left;
+  text-align: center;
   margin: 32px 0 18px 0;
   color: #7a7a7a;
   font-size: 0.97rem;
-} @media (max-width: 580px) {
+}
+
+@media (max-width: 580px) {
   main.container {
     margin-top: 18px;
     padding: 16px 2vw 18px 2vw;
