@@ -16,7 +16,7 @@ main.container {
   margin: 48px auto 0 auto;
   padding: 32px 20px 24px 20px;
   border-radius: 18px;
-  background: rgba(24,28,32,0.95);
+  background: #FFFFFF;
   box-shadow: 0 6px 32px 0 rgba(0,0,0,0.12);
   display: flex;
   flex-direction: column;
