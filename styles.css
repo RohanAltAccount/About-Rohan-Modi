@@ -19,12 +19,12 @@ main.container {
   background: #FFFFFF;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 .profile {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   margin-bottom: 32px;
 }
 .avatar {
@@ -51,7 +51,7 @@ h1 {
 .desc {
   color: #4a4a4a;
   font-size: 1rem;
-  text-align: center;
+  text-align: left;
   margin-bottom: 0;
   line-height: 1.6;
 }
@@ -73,7 +73,7 @@ h1 {
 }
 .card {
   display: flex;
-  align-items: center;
+  align-items: left;
   background: transparent;
   border-radius: 12px;
   padding: 14px 18px;
@@ -102,7 +102,7 @@ h1 {
   color: #5a5a5a;
 }
 footer {
-  text-align: center;
+  text-align: left;
   margin: 32px 0 18px 0;
   color: #7a7a7a;
   font-size: 0.97rem;
