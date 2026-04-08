@@ -14,9 +14,11 @@
 <img src="photoofme.jpeg" alt="Profile photo" class="avatar">
       <button class="cta-button" onclick="copyText()">Copy Email</button>
       <script>
-        function copyText() {
-            navigator.clipboard.writeText("r0hanmodi11111@gmail.com");
-        }
+function copyText() {
+  navigator.clipboard.writeText("r0hanmodi11111@gmail.com")
+    .then(() => alert("Email copied!"))
+    .catch(() => alert("Failed to copy."));
+}
       </script>
       <h1>Rohan Modi</h1>
       <p class="subtitleiguess">High School Student • Developer</p>
