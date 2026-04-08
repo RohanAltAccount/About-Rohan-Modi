@@ -33,10 +33,13 @@ main.container {
   height: 104px;
   border-radius: 50%;
   border: none;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   margin-bottom: 16px;
   object-fit: cover;
   background: #FFFFFF;
+.avatar:hover{
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+transform: translateY(-2px)
+rotate 3deg;
 }
 h1 {
   font-size: 2.3rem;
