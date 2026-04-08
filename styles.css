@@ -72,36 +72,6 @@ h1 {
   flex-direction: column;
   gap: 18px;
 }
-.card {
-  display: flex;
-  align-items: left;
-  background: transparent;
-  border-radius: 12px;
-  padding: 14px 18px;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  border: none;
-}
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
-  background: rgba(0,0,0,0.03);
-}.card span {
-  font-size: 2rem;
-  margin-right: 18px;
-}
-.card .title {
-  font-weight: 600;
-  font-size: 1.13rem;
-  margin-bottom: 2px;
-  color: #000000;
-}
-.card .desc {
-  font-size: 0.97rem;
-  color: #5a5a5a;
-}
 footer {
   text-align: left;
   margin: 32px 0 18px 0;
