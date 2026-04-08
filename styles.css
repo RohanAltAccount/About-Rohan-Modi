@@ -5,7 +5,7 @@
 }
 body {
   background: #FFFFFF;
-  color: #3B3B3B;
+  color: #000000;
   font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   min-height: 100vh;
   display: flex;
@@ -17,7 +17,7 @@ main.container {
   padding: 32px 20px 24px 20px;
   border-radius: 18px;
   background: #FFFFFF;
-  box-shadow: 0 6px 32px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 6px 32px 0 rgba(0,0,0,0.06);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,11 +32,11 @@ main.container {
   width: 104px;
   height: 104px;
   border-radius: 50%;
-  border: 4px solid #46a0f5;
-  box-shadow: 0 2px 12px rgba(70,160,245,0.16);
+  border: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   margin-bottom: 16px;
   object-fit: cover;
-  background: #23272e;
+  background: #FFFFFF;
 }
 h1 {
   font-size: 2.3rem;
@@ -45,26 +45,26 @@ h1 {
   margin-bottom: 6px;
 }
 .subtitleiguess {
-  color: #a2b8d7;
+  color: #4a4a4a;
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
 .desc {
-  color: #6EB9FF;
+  color: #4a4a4a;
   font-size: 1rem;
   text-align: center;
   margin-bottom: 0;
   line-height: 1.6;
 }
 .link {
-  color: #6EB9FF;
+  color: #6a6a6a;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.2s;
+  transition: color 0.2s ease;
 }
 .link:hover {
-  color: #FFB46E;
-  text-decoration: underline;
+  color: #000000;
+  text-decoration: none;
 }
 .links {
   width: 100%;
@@ -75,22 +75,20 @@ h1 {
 .card {
   display: flex;
   align-items: center;
-  background: #22262c;
+  background: transparent;
   border-radius: 12px;
   padding: 14px 18px;
-  transition: box-shadow 0.2s, transform 0.15s;
-  box-shadow: 0 2px 12px rgba(70,160,245,0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  border: 1.5px solid transparent;
+  border: none;
 }
 .card:hover {
-  box-shadow: 0 4px 16px rgba(70,160,245,0.16);
-  border: 1.5px solid #6EB9FF;
-  transform: translateY(-2px) scale(1.025);
-}
-.card span {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+  background: rgba(0,0,0,0.03);
+}.card span {
   font-size: 2rem;
   margin-right: 18px;
 }
@@ -98,18 +96,18 @@ h1 {
   font-weight: 600;
   font-size: 1.13rem;
   margin-bottom: 2px;
+  color: #000000;
 }
 .card .desc {
   font-size: 0.97rem;
-  color: #6EB9FF;
+  color: #5a5a5a;
 }
 footer {
   text-align: center;
   margin: 32px 0 18px 0;
-  color: #7b8fa8;
+  color: #7a7a7a;
   font-size: 0.97rem;
-}
-@media (max-width: 580px) {
+} @media (max-width: 580px) {
   main.container {
     margin-top: 18px;
     padding: 16px 2vw 18px 2vw;
