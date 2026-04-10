@@ -61,17 +61,12 @@ const achievements = [
   "2025-2026・AI & Business Systems Consultant at local Kumon center, contributing to student tracking and marketing systems",
   "2026・Technology & marketing contributor for STEM nonprofit initiative, supporting marketing and web operations",
 
-];
-
-let index = 0;
+]; let index = 0;
 const batchSize = 3;
-
 function loadMore() {
   const list = document.getElementById("achievement-list");
   const loading = document.getElementById("loading");
-
   loading.style.display = "block";
-
   setTimeout(() => {
     for (let i = 0; i < batchSize; i++) {
       if (index >= achievements.length) return;
@@ -83,15 +78,12 @@ function loadMore() {
 
       index++;
     }
-
     loading.style.display = "none";
   }, 500);
 }
 
-// initial load
 loadMore();
 
-// infinite scroll trigger
 window.addEventListener("scroll", () => {
   if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
     loadMore();

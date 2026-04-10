@@ -217,6 +217,7 @@ footer {
   margin: 32px 0 18px 0;
   color: #ffffff;
   font-size: 0.97rem;
+  position: fixed;
 }
 
 @media (max-width: 580px) {
