@@ -4,64 +4,119 @@
   padding: 0;
 }
 body {
-  background: #FFFFFF;
-  color: #000000;
-  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  background: #fafafa;
+  color: #111;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  padding: 64px 16px;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity: 0.04;
+  z-index: 999;
 }
 main.container {
-  max-width: 480px;
-  margin: 48px auto 0 auto;
-  padding: 32px 20px 24px 20px;
-  border-radius: 18px;
-  background: #FFFFFF;
+  max-width: 680px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
 }
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 50px;
+}
+
+.avatar {
+  width: 104px;
+  height: 104px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  object-fit: cover;
+  background: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
 }
 .avatar {
   width: 104px;
   height: 104px;
-  border-radius: 50%;
-  border: none;
-  margin-bottom: 16px;
-  object-fit: cover;
-  background: #FFFFFF;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.avatar:hover{
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    transform: translateY(-2px) rotate(3deg);
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+.avatar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: #fafafa;
+}
+.background::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 217, 255, 0.18), transparent 60%);
+  top: -200px;
+  left: -200px;
+  filter: blur(40px);
+}
+
+.background::after {
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(255, 155, 155, 0.16), transparent 60%);
+  bottom: -250px;
+  right: -250px;
+  filter: blur(50px);
 }
 h1 {
-  font-size: 2.3rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: 6px;
+  font-size: 8rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
 }
 .subtitleiguess {
-  color: #4a4a4a;
-  font-size: 1.1rem;
-  margin-bottom: 10px;
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
 }
+
 .desc {
-  color: #4a4a4a;
-  font-size: 1rem;
+  color: #777;
+  font-size: 1.1rem;
   text-align: center;
-  margin-bottom: 0;
   line-height: 1.6;
+  max-width: 50ch;
+  margin-bottom: 12px;
 }
 .link {
-  color: #6a6a6a;
+  color: #666;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
@@ -70,45 +125,50 @@ h1 {
 }
 .link:hover {
   color: #000000;
-  transform: translateY(-2px);
+  transform: translateY(-1.5px);
   text-decoration: none;
-}
-.cta-button {
-  margin: 16px 0;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 12px;
-  background: #ffffff;
-  color: #6a6a6a;
-  font-weight: 600;
-  font-size: 1rem;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.cta-button {
+ color: #6a6a6a;
+  background: none;
+  border: none;
+  padding: 0;
+
+  font: inherit;
+  font-weight: inherit;
+
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 12px;
+  padding: 10px 16px;
+  display: inline;
 }
 .cta-button:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.16);
+  text-shadow: 0 14px 28px rgba(0,0,0,0.16);
   transform: translateY(-2px);
   color: #000000;
+  cursor: none;
 }
 .card {
   display: flex;
-  align-items: left;
+  align-items: center;
+  justify-content: space-between;
   background: transparent;
   border-radius: 12px;
-  padding: 14px 18px;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  padding: 16px 18px;
+  transition: transform 0.2s ease, background 0.2s ease;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
   border: none;
 }
+
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
-  background: rgba(0,0,0,0.03);
+  transform: translateY(-2px);
+  background: #f3f3f3;
 }
 .links {
   width: 100%;
@@ -120,14 +180,14 @@ footer {
   width: 100%;
   text-align: center;
   margin: 32px 0 18px 0;
-  color: #7a7a7a;
+  color: #ffffff;
   font-size: 0.97rem;
 }
 
 @media (max-width: 580px) {
   main.container {
-    margin-top: 18px;
-    padding: 16px 2vw 18px 2vw;
+    margin-top: 19px;
+    padding: 19px 2vw 18px 2vw;
   }
   .hoverbox span {
     font-size: 1.6rem;
