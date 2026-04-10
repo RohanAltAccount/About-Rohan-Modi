@@ -8,9 +8,8 @@ body {
   color: #111;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
   padding: 64px 16px;
+  display: block;
 }
 body::before {
   content: "";
@@ -19,7 +18,7 @@ body::before {
   pointer-events: none;
   background-image: url("https://grainy-gradients.vercel.app/noise.svg");
   opacity: 0.04;
-  z-index: 999;
+  z-index: 0;
 }
 main.container {
   max-width: 680px;
@@ -30,7 +29,7 @@ main.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: fixed;
+  z-index: 1;
 }
 .profile {
   display: flex;
@@ -68,7 +67,7 @@ main.container {
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 .background {
-  position: fixed;
+  position: relative;
   inset: 0;
   z-index: -1;
   overflow: hidden;
@@ -164,6 +163,42 @@ h1 {
   color: inherit;
   cursor: pointer;
   border: none;
+}
+.achievements {
+  margin-top: 50px;
+}
+
+#achievement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.achievement-card {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: #6a6a6a;
+    transition: color 0.5s ease, font-size 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+.achievement-card:hover {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: #000000;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transform: translateY(-2px);
+    transition: color 0.5s ease, font-size 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#loading {
+  text-align: center;
+  padding: 20px;
+  display: none;
 }
 
 .card:hover {

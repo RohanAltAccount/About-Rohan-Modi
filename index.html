@@ -32,6 +32,11 @@ function copyText() {
         <a href="https://thetechresearchpaper.wixsite.com/techknowledge/blog" class="link">Tech Blog</a> |
         <a href="https://www.github.com/RohanAltAccount" class="link">Github</a>
       </p>
+      <section class="achievements">
+  <h2>achievements</h2>
+  <div id="achievement-list"></div>
+  <div id="loading">loading up...</div>
+</section>
     </section>
 
   </main>
@@ -39,5 +44,57 @@ function copyText() {
   <footer>
     <small>©2025 Rohan.</small>
   </footer>
+
+
+<script>
+const achievements = [
+  "Present・CS and ML oriented high school student",
+  "2022・Founded tech blog (TecRes), publishing informative tech news",
+  "2024-2025・Built multiple web apps and prototypes",
+  "2025・Learned C++ and built CLI projects",
+  "2025・Started competiting in coding competitions and hackathons",
+  "2025・Won first hackathon",
+  "2025・Built GitHub open-source tools",
+  "2025-2026・Started research writing and published a paper on arXiv",
+  "2025-2026・AI & Business Systems Consultant at Kumon, contributing to student tracking and marketing systems",
+  "2026・Started YouTube channel sharing tech knowledge and tutorials"
+];
+
+let index = 0;
+const batchSize = 3;
+
+function loadMore() {
+  const list = document.getElementById("achievement-list");
+  const loading = document.getElementById("loading");
+
+  loading.style.display = "block";
+
+  setTimeout(() => {
+    for (let i = 0; i < batchSize; i++) {
+      if (index >= achievements.length) return;
+
+      const div = document.createElement("div");
+      div.className = "achievement-card";
+      div.textContent = achievements[index];
+      list.appendChild(div);
+
+      index++;
+    }
+
+    loading.style.display = "none";
+  }, 500);
+}
+
+// initial load
+loadMore();
+
+// infinite scroll trigger
+window.addEventListener("scroll", () => {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+    loadMore();
+  }
+});
+</script>
+
 </body>
 </html>
