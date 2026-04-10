@@ -78,8 +78,8 @@ h1 {
   padding: 12px 20px;
   border: none;
   border-radius: 12px;
-  background: #000000;
-  color: #ffffff;
+  background: #ffffff;
+  color: #6a6a6a;
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
@@ -89,9 +89,9 @@ h1 {
   justify-content: center;
 }
 .cta-button:hover {
-  transform: translateY(-4px);
   box-shadow: 0 14px 28px rgba(0,0,0,0.16);
-  background: #111111;
+  transform: translateY(-2px);
+  color: #000000;
 }
 .card {
   display: flex;
