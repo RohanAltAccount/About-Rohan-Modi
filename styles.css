@@ -181,6 +181,8 @@ h1 {
   background: transparent;
   color: #6a6a6a;
     transition: color 0.5s ease, font-size 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+  width: 100%;
 
 }
 .achievement-card:hover {
