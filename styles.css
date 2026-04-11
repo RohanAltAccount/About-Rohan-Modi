@@ -78,7 +78,8 @@ main.container {
   position: absolute;
   width: 1000px;
   height: 1000px;
-  background: radial-gradient(circle, rgba(0, 217, 255, 0.22), transparent 65%);
+  background: radial-gradient(circle at var(-x) var(-y),
+                              rgba(0, 217, 255, 0.22), transparent 65%);
   top: -300px;
   left: -300px;
   filter: blur(42px);
