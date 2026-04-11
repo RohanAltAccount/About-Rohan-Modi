@@ -194,7 +194,7 @@ h1 {
   background: transparent;
   color: #000000;
   font-size: 1.05rem;
-  cursor: pointer;
+  cursor: default;
   transform: translateY(-2px);
     transition: color 0.5s ease, font-size 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
