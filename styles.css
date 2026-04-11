@@ -76,12 +76,13 @@ main.container {
 .background::before {
   content: "";
   position: absolute;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(0, 217, 255, 0.18), transparent 60%);
-  top: -200px;
-  left: -200px;
-  filter: blur(40px);
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(0, 217, 255, 0.22), transparent 65%);
+  top: -300px;
+  left: -300px;
+  filter: blur(42px);
+  
 }
 
 .background::after {
