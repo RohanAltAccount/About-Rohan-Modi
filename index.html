@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Rohan Modi</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -13,13 +14,21 @@
     <section class="profile">
 <img src="PhotoOfMe2.png" alt="Profile photo" class="avatar">
       <button class="cta-button" onclick="copyText()">Copy Email</button>
-      <script>
+<script>
 function copyText() {
   navigator.clipboard.writeText("r0hanmodi11111@gmail.com")
-    .then(() => alert("Email copied!"))
-    .catch(() => alert("Failed to copy."));
+    .then(() => {
+      return Swal.fire({
+        title: "Email copied.",
+        text: "Feel free to send me an email. I’ll respond as soon as possible.",
+        icon: "success"
+      });
+    })
+    .catch(() => {
+      alert("Failed to copy.");
+    });
 }
-      </script>
+</script>
       <h1>Rohan Modi</h1>
       <p class="subtitleiguess">High School Student • Developer</p>
 
