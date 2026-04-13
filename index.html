@@ -19,12 +19,13 @@ function copyText() {
   navigator.clipboard.writeText("r0hanmodi11111@gmail.com")
     .then(() => {
       return Swal.fire({
-        title: "Email copied.",
-        text: "Feel free to send me an email. I’ll respond as soon as possible.",
-        icon: "success"
-         background: "#ffffff",
-  color: "#000000",
-  confirmButtonColor: "#ffffff"
+        title: "Email copied!",
+        text: "Your email has been copied to clipboard.",
+        icon: "success",
+        confirmButtonText: "Dismiss",
+        width: 600, padding: "3em", 
+        color: "#000000", 
+        background: "#ffffff"
       });
     })
     .catch(() => {
@@ -104,8 +105,8 @@ window.addEventListener("scroll", () => {
 </script>
 <script>
   document.addEventListener("mousemove", (e) => {
-   document.documentElement.style.setProperty("-x", `${e.clientX}px`);
-  document.documentElement.style.setProperty("-y", `${e.clientY}px`);
+   document.documentElement.style.setProperty("--x", `${e.clientX}px`);
+  document.documentElement.style.setProperty("--y", `${e.clientY}px`);
   });
 </script>
 </body>
