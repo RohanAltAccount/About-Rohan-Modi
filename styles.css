@@ -76,7 +76,7 @@ main.container {
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 .background {
-  position: relative;
+  position: fixed;
   inset: 0;
   z-index: -1;
   overflow: hidden;
