@@ -76,13 +76,7 @@ main.container {
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
-.background {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  overflow: hidden;
-  background: #fafafa;
-}
+
 .background {
   position: fixed;
   inset: 0;
