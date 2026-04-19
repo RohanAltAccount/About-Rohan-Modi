@@ -24,14 +24,14 @@ function copyText() {
   navigator.clipboard.writeText("r0hanmodi11111@gmail.com")
     .then(() => {
       return Swal.fire({
-  title: "Email copied.",
+ title: "Email copied.",
   text: "Feel free to send me an email. I’ll respond as soon as possible.",
   icon: "success",
   confirmButtonText: "Sounds good",
-  background: "#ffffff",
-  color: "#000000",
-  confirmButtonColor: "#000000",
-});
+  background: "#000000",
+  color: "#6a6a6a",
+  confirmButtonColor: "#EED452",
+}); 
     })
     .catch(() => {
       alert("Failed to copy.");
