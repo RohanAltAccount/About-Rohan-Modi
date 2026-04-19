@@ -170,7 +170,7 @@ h1 {
   text-shadow: 0 14px 28px rgba(0,0,0,0.16);
   transform: translateY(-2px);
   color: #000000;
-  cursor: none;
+  cursor: copy;
 }
 .card {
   display: flex;
@@ -276,7 +276,7 @@ body.dark .achievement-card {
   color: #aaa !important;
 }
 body.dark .achievement-card:hover {
-  color: #fff !important;
+  color: #fff !important;        
 }
 body.dark .background {
   background: #111 !important;
@@ -287,9 +287,8 @@ body.dark .link {
 body.dark .link:hover {
   color: #fff !important;
 }
-body.dark .download-resume {
-  border-color: #e8e8e8 !important;
-}
+
+
 footer {
   width: 100%;
   text-align: center;
