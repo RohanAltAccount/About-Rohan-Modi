@@ -260,7 +260,7 @@ h1 {
 }
 body.dark #theme-toggle {
   border: none;
-  color: #ccc;
+  color: transparent;
 }
 body.dark #theme-toggle:hover {
   border: none;
