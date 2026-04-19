@@ -263,7 +263,7 @@ body.dark #theme-toggle {
   color: #ccc;
 }
 body.dark #theme-toggle:hover {
-  border:none;
+  border: none;
   color: #fff;
 }
 body.dark, body.dark * {
