@@ -233,6 +233,59 @@ h1 {
   flex-direction: column;
   gap: 18px;
 }
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  background: none;
+  border: 1.5px solid #ccc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease; }
+#theme-toggle:hover {
+  border-color: #000;
+  color: #000;
+  transform: scale(1.08);
+}
+body.dark #theme-toggle {
+  border-color: #555;
+  color: #ccc;
+}
+body.dark #theme-toggle:hover {
+  border-color: #fff;
+  color: #fff;
+}
+body.dark, body.dark * {
+  background: #111 !important;
+  color: #e8e8e8 !important;
+}
+body.dark .subtitleiguess,
+body.dark .desc,
+body.dark .achievement-card {
+  color: #aaa !important;
+}
+body.dark .achievement-card:hover {
+  color: #fff !important;
+}
+body.dark .background {
+  background: #111 !important;
+}
+body.dark .link {
+  color: #aaa !important;
+}
+body.dark .link:hover {
+  color: #fff !important;
+}
+body.dark .download-resume {
+  border-color: #e8e8e8 !important;
+}
 footer {
   width: 100%;
   text-align: center;
