@@ -50,7 +50,7 @@ function copyText() {
       <section class="achievements">
   <h2>Achievements</h2>
   <div id="achievement-list"></div>
-  <div id="loading">There's nothing else to see here...</div>
+  <div id="loading">There's nothing else to see here.</div>
 </section>
     </section>
 
@@ -84,7 +84,7 @@ function loadMore() {
   loading.style.display = "block";
   setTimeout(() => {
     for (let i = 0; i < batchSize; i++) {
-      if (index >= achievements.length) return;
+      if (index >= achievements.length) break;
 
       const div = document.createElement("div");
       div.className = "achievement-card";
