@@ -248,7 +248,8 @@ h1 {
   align-items: center;
   justify-content: center;
   color: #555;
-  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease; }
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
 #theme-toggle:hover {
   border-color: #000;
   color: #000;
