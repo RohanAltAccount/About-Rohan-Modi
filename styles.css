@@ -3,6 +3,15 @@
   margin: 0;
   padding: 0;
 }
+
+navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255,255,255,0.5)
+  
+}
 body {
   background: #fafafa;
   color: #111;
