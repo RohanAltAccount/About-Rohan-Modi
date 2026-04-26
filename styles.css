@@ -14,7 +14,7 @@
   border-radius: 13px;
   display: flex;
   gap: 20px;
-  z-index: 9999;
+  z-index: 100000;
   padding: 10px 20px;
   transition: border-radius 0.2s ease, backdrop-filter 0.2s ease;
 
@@ -41,7 +41,7 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  -image: url("https://grainy-gradients.vercel.app/noise.svg");
   opacity: 0.04;
   z-index: 0;
 }
@@ -49,7 +49,7 @@ main.container {
   max-width: 680px;
   width: 100%;
   margin: 0 auto;
-  background: transparent;
+  : transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,7 +69,7 @@ main.container {
 }
 
 .swal-button {
-  background-color: black !important;
+  -color: black !important;
   color: white !important;
   border-radius: 6px;
 }
@@ -80,7 +80,7 @@ main.container {
   border-radius: 15px;
   margin-bottom: 30px;
   object-fit: cover;
-  background: none;
+  : none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 
 }
@@ -102,10 +102,10 @@ main.container {
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-.background {
+. {
   position: fixed;
   inset: 0;
-  z-index: -1;
+  z-index: -10;
   overflow: hidden;
   background: #fafafa;
 
