@@ -171,6 +171,7 @@ h1 {
   transform: translateY(-1.5px);
   text-decoration: none;
   cursor: pointer;
+  backdrop-filter: blur(20px);
 }
 
 .cta-button {
