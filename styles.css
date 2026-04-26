@@ -193,7 +193,6 @@ h1 {
   transform: translateY(-2px);
   color: #000000;
   cursor: alias;
-  backdrop-filter: blur(20px);
 
 }
 .card {
