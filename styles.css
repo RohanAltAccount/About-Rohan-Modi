@@ -102,7 +102,7 @@ main.container {
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-. {
+.background {
   position: fixed;
   inset: 0;
   z-index: -10;
@@ -310,7 +310,9 @@ body.dark .link {
 body.dark .link:hover {
   color: #fff !important;
 }
-
+body.dark .cta-button:hover {
+  color: #fff !important;
+}
 
 footer {
   width: 100%;
