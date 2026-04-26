@@ -171,7 +171,6 @@ h1 {
   transform: translateY(-1.5px);
   text-decoration: none;
   cursor: pointer;
-  backdrop-filter: blur(20px);
 }
 
 .cta-button {
@@ -194,6 +193,8 @@ h1 {
   transform: translateY(-2px);
   color: #000000;
   cursor: alias;
+  backdrop-filter: blur(20px);
+
 }
 .card {
   display: flex;
