@@ -14,14 +14,16 @@
   border-radius: 13px;
   display: flex;
   gap: 20px;
+  z-index: 9999;
   padding: 10px 20px;
   transition: border-radius 0.2s ease, backdrop-filter 0.2s ease;
 
   
 }
 .navbar:hover {
-border-radius: 999px;
-  
+border-radius: 26px;
+backdrop-filter: saturate(200%) blur(24px);
+background-color: rgba(255,255,255,0.6);
 }
 body {
   background: #fafafa;
