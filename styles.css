@@ -11,7 +11,7 @@
   transform: translateX(-50%);
   backdrop-filter: saturate(180%) blur(20px);
   background-color: rgba(255,255,255,0.5);
-  border-radius: 26px;
+  border-radius: 30px;
   display: flex;
   gap: 20px;
   z-index: 100000;
@@ -21,8 +21,7 @@
   
 }
 .navbar:hover {
-border-radius: 1px;
-border-bottom: 1px solid grey;
+border-radius: 13px;
 backdrop-filter: saturate(200%) blur(24px);
 background-color: rgba(255,255,255,0.6);
 cursor: pointer;
