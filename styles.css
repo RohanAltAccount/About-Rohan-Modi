@@ -34,7 +34,6 @@ body {
   padding: 64px 16px;
   display: block;
   cursor: default;
-    border-radius: 14px;
 
 }
 body::before {
