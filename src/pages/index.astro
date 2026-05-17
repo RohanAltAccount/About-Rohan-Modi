@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Navbar from "../components/Navbar";
 import MagneticButton from "../components/MagneticButton";
+import DotParticles from "../components/DotParticles";
 ---
 
 <html lang="en">
@@ -19,11 +20,17 @@ import MagneticButton from "../components/MagneticButton";
 
   <body>
      <Navbar />
-<div class="absolute top-60 left-1/2 -translate-x-1/2 z-5000">
+<div class="absolute top-60 left-1/2 -translate-x-1/2 z-50">
   <MagneticButton client:load />
 </div>
-    <main class="container">
-      <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+<div id="particle-bg" class="fixed inset-0 z-1 pointer-events-none">
+  <DotParticles client:load />
+</div>
+<main class="container relative z-10">
+      <button id="theme-toggle" 
+      class="relative z-50"
+      onclick="toggleTheme()" 
+      aria-label="Toggle dark mode">
         <svg id="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>

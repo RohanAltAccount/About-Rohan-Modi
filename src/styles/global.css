@@ -46,7 +46,7 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  -image: url("https://grainy-gradients.vercel.app/noise.svg");
+background-image: url("https://grainy-gradients.vercel.app/noise.svg");
   opacity: 0.04;
   z-index: 0;
 }
@@ -73,7 +73,7 @@ main.container {
 }
 
 .swal-button {
-  -color: black !important;
+  background-color: black !important;
   color: white !important;
   border-radius: 6px;
 }
@@ -109,7 +109,7 @@ main.container {
 .background {
   position: fixed;
   inset: 0;
-  z-index: -10;
+  z-index: 0;
   overflow: hidden;
   background: #fafafa;
 
@@ -285,39 +285,59 @@ h1 {
   color: #000;
   transform: scale(1.08);
 }
-body.dark #theme-toggle {
-  border: none;
-  color: transparent;
+html,
+body {
+  background: #fafafa;
+  color: #111;
 }
-body.dark #theme-toggle:hover {
-  border: none;
-  color: #fff;
+
+body.dark {
+  background: #111;
+  color: #ffffff;
 }
-body.dark, body.dark * {
-  background: transparent !important;
-  color: #e8e8e8 !important;
-  border-radius: 14px;
+
+body.dark .background {
+  background: #111;
 }
+
+body.dark .navbar {
+  background-color: rgba(30, 30, 30, 0.55);
+}
+
+body.dark .link,
 body.dark .subtitleiguess,
 body.dark .desc,
 body.dark .achievement-card {
-  color: #aaa !important;
+  color: #aaa;
 }
-body.dark .achievement-card:hover {
-  color: #fff !important;        
-}
-body.dark .background {
-  background: #111 !important;
-}
-body.dark .link {
-  color: #aaa !important;
-}
-body.dark .link:hover {
-  color: #fff !important;
-}
+
+body.dark .link:hover,
+body.dark .achievement-card:hover,
 body.dark .cta-button:hover {
-  color: #fff !important;
+  color: #fff;
 }
+
+body.dark #theme-toggle {
+  color: #fff;
+}
+#particle-bg {
+  opacity: 0.12;
+    filter: invert(1);
+}
+
+body.dark #particle-bg {
+  opacity: 0.8;
+    filter: invert(0);
+}
+#particle-bg canvas {
+  filter: invert(1);
+}
+
+body.dark #particle-bg canvas {
+  filter: none;
+}
+
+
 
 footer {
   width: 100%;
@@ -326,6 +346,9 @@ footer {
   color: #ffffff;
   font-size: 0.97rem;
   position: fixed;
+}
+body.dark footer {
+  color: #aaa;
 }
 
 @media (max-width: 580px) {
