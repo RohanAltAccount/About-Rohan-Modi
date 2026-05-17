@@ -22,9 +22,7 @@ import profile from "../assets/PhotoOfMe2.png";
 
   <body>
      <Navbar />
-<div class="absolute top-60 left-1/2 -translate-x-1/2 z-50">
-  <MagneticButton client:load />
-</div>
+
 <div id="particle-bg" class="fixed inset-0 z-1 pointer-events-none">
   <DotParticles client:load />
 </div>
@@ -42,7 +40,9 @@ import profile from "../assets/PhotoOfMe2.png";
       <section class="profile">
 <img src={profile.src} alt="Profile photo" class="avatar" />
 <button class="cta-button" onclick="copyText()">Copy Email</button>
-
+  <div class="flex justify-center mt-6">
+    <MagneticButton client:load />
+  </div>
         <h1>Rohan Modi</h1>
         <p class="subtitleiguess">High School Student • Developer</p>
 
