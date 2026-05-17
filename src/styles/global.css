@@ -67,6 +67,7 @@ main.container {
   margin-bottom: 50px;
   border: none;
   border-radius: 14px;
+  animation: profileLoad 0.6s ease-out;
 }
 .swal-white-popup {
   border-radius: 12px;
@@ -153,6 +154,17 @@ h1 {
   font-size: 1.2rem;
   margin-bottom: 25px;
 }
+@keyframes profileLoad {
+0% {
+  opacity: 0;
+  transform: translateY(20px);
+
+}
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
 
 .desc {
   color: #777;
@@ -175,6 +187,13 @@ h1 {
   transform: translateY(-1.5px);
   text-decoration: none;
   cursor: pointer;
+}
+
+.mynamedisplay {
+    font-size: 115px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
 }
 
 .cta-button {

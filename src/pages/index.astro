@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import MagneticButton from "../components/MagneticButton";
 import DotParticles from "../components/DotParticles";
 import profile from "../assets/PhotoOfMe2.png";
-
+import { ContainerTextFlip } from "../components/ui/container-text-flip";
 ---
 
 <html lang="en">
@@ -13,11 +13,11 @@ import profile from "../assets/PhotoOfMe2.png";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Rohan Modi</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png" />
-    <link rel="icon" href="/favicon_io/favicon.ico" />
-    <link rel="manifest" href="/favicon_io/site.webmanifest" />
+   <link rel="apple-touch-icon" sizes="180x180" href={`${import.meta.env.BASE_URL}favicon_io/apple-touch-icon.png`} />
+<link rel="icon" type="image/png" sizes="32x32" href={`${import.meta.env.BASE_URL}favicon_io/favicon-32x32.png`} />
+<link rel="icon" type="image/png" sizes="16x16" href={`${import.meta.env.BASE_URL}favicon_io/favicon-16x16.png`} />
+<link rel="icon" href={`${import.meta.env.BASE_URL}favicon_io/favicon.ico`} />
+<link rel="manifest" href={`${import.meta.env.BASE_URL}favicon_io/site.webmanifest`} />
   </head>
 
   <body>
@@ -43,8 +43,10 @@ import profile from "../assets/PhotoOfMe2.png";
   <div class="flex justify-center mt-6">
     <MagneticButton client:load />
   </div>
-        <h1>Rohan Modi</h1>
-        <p class="subtitleiguess">High School Student • Developer</p>
+  <div class="mynamedisplay">
+        <ContainerTextFlip client:load />
+        </div>
+        <p class="subtitleiguess">High School Student • AI + ML</p>
 
         <p class="desc">
           Passionate about computer science and sharing knowledge. Feel free to reach out!
