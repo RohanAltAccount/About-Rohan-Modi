@@ -24,6 +24,10 @@ export default function MagneticButton() {
   }
 
   return (
+    <a href="https://youtube.com/@ROHAN-MODI"
+      target="_blank"
+      rel="noopener noreferrer"
+      >
     <button
       ref={ref}
       onMouseMove={handleMouseMove}
@@ -47,5 +51,6 @@ export default function MagneticButton() {
     >
       Subscribe @ROHAN-MODI
     </button>
+      </a>
   );
 }
